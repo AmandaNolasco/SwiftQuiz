@@ -2,7 +2,7 @@
 //  Quiz.swift
 //  swiftQuiz
 //
-//  Created by Adriel Alves on 31/05/21.
+//  Created by Amanda Nolasco on 31/05/21.
 //
 
 import Foundation

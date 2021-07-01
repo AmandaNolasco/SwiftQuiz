@@ -2,7 +2,7 @@
 //  QuizManager.swift
 //  swiftQuiz
 //
-//  Created by Adriel Alves on 31/05/21.
+//  Created by Amanda Nolasco on 31/05/21.
 //
 
 import Foundation
@@ -75,6 +75,7 @@ class QuizManager {
         _totalAnswers += 1
         if quiz.validateOption(index) {
             _totalCorrectAnswers += 1
+                
         }
     }
 }
