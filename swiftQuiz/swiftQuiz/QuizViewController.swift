@@ -39,24 +39,24 @@ class QuizViewController: UIViewController {
             for i in 0..<quizManager.options.count {
                 let option = quizManager.options[i]
                 let button = btAnswers[i]
-                button.setTitle(option, for:.normal)
+                button.setTitle(option, for: .normal)
             }
         }
         
         func showResults() {
-            performSegue(withIdentifier: "resultSegue", sender: nil)
+            performSegue(withIdentifier:"resultSegue", sender: nil)
             
         }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let resultViewController  = segue.destination as! ResultViewController
+        let resultViewController = segue.destination as! ResultViewController
         resultViewController.totalAnswers = quizManager.totalAnswers
-        resultViewController.totalAnswers = quizManager.totalCorrectAnswers
+        resultViewController.totalCorrectAnswers = quizManager.totalCorrectAnswers
         
     }
     
     @IBAction func selectAnswer(_ sender: UIButton) {
-        let index = btAnswers.index(of: sender)!
+        let index = btAnswers.firstIndex(of: sender)!
         quizManager.validateAnswer(index: index)
         getNewQuiz()
     }

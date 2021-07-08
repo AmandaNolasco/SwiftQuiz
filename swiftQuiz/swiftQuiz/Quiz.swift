@@ -13,20 +13,20 @@ class Quiz {
     // 'question' representa a pergunta em sí
     let options: [String]
     // 'options' é um array que apresenta todas as opções de respostas
-    private let correctAnswer: String
+    private let correctedAnswer: String
     // 'correctAnswer' armazena o valor correto da resposta
     
-    init( question:String, options: [String],correctAnswer: String ) {
+    init( question:String, options: [String],correctedAnswer: String ) {
         self.question = question
         self.options = options
-        self.correctAnswer = correctAnswer
+        self.correctedAnswer = correctedAnswer
     }
     // A função 'validateOption' valida a resposta do usuário
     
     func validateOption (_ index: Int) -> Bool {
         
         let answer = options[index]
-        return answer == correctAnswer
+        return answer == correctedAnswer
         
     }
     

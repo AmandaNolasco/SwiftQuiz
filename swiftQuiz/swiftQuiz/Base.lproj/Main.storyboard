@@ -209,7 +209,7 @@
                     <navigationItem key="navigationItem" id="v6G-Hw-CH5"/>
                     <connections>
                         <outlet property="lbQuestion" destination="rwS-6Z-m2r" id="H9W-tN-wIt"/>
-                        <outlet property="viTimer" destination="y45-Xm-OZW" id="UMD-RV-pQw"/>
+                        <outlet property="viTimer" destination="YCD-ZU-ExC" id="4aj-aj-Fd7"/>
                         <outletCollection property="btAnswers" destination="WhT-nr-g0r" collectionClass="NSMutableArray" id="d17-s1-9SL"/>
                         <outletCollection property="btAnswers" destination="jBN-mg-6qr" collectionClass="NSMutableArray" id="brS-sw-DMi"/>
                         <outletCollection property="btAnswers" destination="XwD-Vu-B0f" collectionClass="NSMutableArray" id="iTZ-RS-LPd"/>
